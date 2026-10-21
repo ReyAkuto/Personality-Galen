@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asesmen Kepribadian 4 Temperamen Galen & Florence Littauer. Kenali potensi kepemimpinan, komunikasi, dan dinamika karakter Anda.">
+  <meta name="color-scheme" content="light dark">
+  <title>Galen Personality Assessment | Tes 4 Temperamen</title>
+
+  <!-- FOUC Prevention Script for Dark Mode -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        var metaScheme = document.querySelector('meta[name="color-scheme"]');
+        if (metaScheme) metaScheme.content = theme;
+      } catch (e) {}
+    })();
+  </script>
+  
+  <!-- Modern Clean Typography: Plus Jakarta Sans via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Full-Screen Ambient Aura (Spreads across whole viewport on Result view) -->
+  <div class="full-screen-aura" id="full-screen-aura"></div>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-wrapper" id="brand-home-link" title="Kembali ke Beranda">
+        <div class="brand-icon">G</div>
+        <div>
+          <span class="brand-title">Galen Assessment</span>
+          <span class="brand-subtitle">Analisis 4 Ragam Temperamen</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="btn-icon-toggle" id="btn-theme-toggle" title="Ganti Tema (Dark / Light)" aria-label="Ganti Tema">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Backend Settings & Logs Button -->
+        <button type="button" class="btn btn-secondary btn-sm" id="btn-open-logs">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Riwayat & Backend
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- ====================================================================
+         VIEW 1: HOME / LANDING PAGE
+         ==================================================================== -->
+    <section id="view-home" class="view-section active">
+      <div class="home-hero">
+        <div class="badge-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          Asesmen Psikometri Mandiri
+        </div>
+        <h1>Temukan Dinamika Alami Kepribadian Anda</h1>
+        <p>Asesmen kepribadian teruji berbasis 4 temperamen klasik: Koleris, Sanguinis, Melankolis, dan Phlegmatis untuk mengenali kekuatan serta potensi diri Anda.</p>
+      </div>
+
+      <div class="card-box card-3d-tilt">
+        <form id="form-start-assessment">
+          <div class="form-group">
+            <label class="form-label" for="input-name">Nama Lengkap <span class="req">*</span></label>
+            <input type="text" id="input-name" class="form-input" placeholder="Masukkan nama lengkap Anda..." required autocomplete="name" autofocus>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="input-agency">Instansi / Profesi <span class="hint">(Opsional)</span></label>
+              <input type="text" id="input-agency" class="form-input" placeholder="Contoh: Mahasiswa / Software Engineer">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-email">Email / WhatsApp <span class="hint">(Opsional)</span></label>
+              <input type="text" id="input-email" class="form-input" placeholder="Untuk keperluan pencatatan log">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="btn-start">
+            Mulai Asesmen (40 Soal)
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <div class="highlight-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Estimasi 5-7 Menit</h4>
+          <p>40 pernyataan diagnostik. Pilih yang paling spontan mencerminkan kebiasaan Anda.</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h4>Dua Karakter Dominan</h4>
+          <p>Memetakan perpaduan karakter utama (primer) dan karakter sekunder secara presisi.</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h4>Analisis Karir & Relasi</h4>
+          <p>Ulasan mendalam gaya kepemimpinan, dinamika kerja, dan pola interaksi sosial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 2: TEST QUIZ (ELEVATED CARD DENGAN AMBIENT AURA)
+         ==================================================================== -->
+    <section id="view-test" class="view-section">
+      <div class="test-header-bar">
+        <button type="button" class="btn btn-text btn-sm" id="btn-cancel-test">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Batalkan Tes
+        </button>
+        <div class="progress-info">
+          <span class="step-counter" id="step-counter-text">Soal 1 dari 40</span>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Test Card Wrapper with Dynamic Temperament Aura Background -->
+      <div class="test-card-wrapper">
+        <div class="test-card-aura" id="test-card-aura"></div>
+        <div class="test-card card-3d-tilt">
+          <!-- Card Top Meta Bar -->
+          <div class="card-top-meta">
+            <div class="pulse-category-pill">
+              <span class="pulse-dot"></span>
+              <span id="question-part-label">Bagian I: Sifat Positif & Kekuatan Diri</span>
+            </div>
+            <div class="question-index-badge" id="question-index-badge">01 / 40</div>
+          </div>
+
+          <div class="question-instruction" id="question-prompt-text">
+            Manakah sifat yang paling spontan mencerminkan kebiasaan alami Anda?
+          </div>
+          <div class="question-sub-prompt" id="question-sub-prompt">
+            Pilihlah salah satu opsi berdasarkan reaksi pertama Anda tanpa terlalu banyak menganalisis.
+          </div>
+
+          <div class="options-list" id="options-container" role="radiogroup">
+            <!-- Option Cards dirender secara dinamis oleh app.js -->
+          </div>
+
+          <!-- Card Bottom Hint -->
+          <div class="card-bottom-hint">
+            <span>Pintasan: Tekan <kbd class="kbd-pill">1 - 4</kbd> atau <kbd class="kbd-pill">Enter ↵</kbd></span>
+            <span id="card-answered-count">0 / 40 dijawab</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-footer-nav">
+        <button type="button" class="btn btn-secondary" id="btn-prev-question" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Sebelumnya
+        </button>
+        <button type="button" class="btn btn-primary" id="btn-next-question" style="width: auto;">
+          Selanjutnya
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 3: RESULT VIEW (TINJAUAN HASIL DENGAN FULL-BLEED AURA MESH)
+         ==================================================================== -->
+    <section id="view-result" class="view-section">
+      <!-- Print Only Header -->
+      <div class="print-header-brand" style="display: none;">
+        <h2>Laporan Hasil Asesmen Kepribadian Galen</h2>
+        <p>Berdasarkan Teori 4 Temperamen Hippocrates-Galen & Florence Littauer</p>
+      </div>
+
+      <!-- Result Hero Card -->
+      <div class="result-header-card card-3d-tilt">
+        <div class="result-meta">
+          <div>
+            <span class="participant-greeting">Hasil Asesmen Peserta</span>
+            <h2 class="participant-name-display" id="res-participant-name">Nama Peserta</h2>
+          </div>
+          <div style="text-align: right;">
+            <div class="assessment-date" id="res-assessment-date">Tanggal Asesmen</div>
+            <span class="badge-pill" id="res-storage-badge" style="margin-top:0.35rem; font-size:0.75rem;">
+              Tersimpan di Database
+            </span>
+          </div>
+        </div>
+
+        <div class="dominant-hero-box">
+          <div class="dominant-tag-row" id="res-chips-container">
+            <!-- Chips Dominan 1 dan 2 dirender di sini -->
+          </div>
+          <div class="dominant-combination-title" id="res-combination-title">
+            Gelar Kombinasi Karakter
+          </div>
+          <p style="font-size:0.925rem; margin-top:0.25rem;">
+            Berikut adalah uraian komprehensif mengenai potensi kepemimpinan, gaya komunikasi, serta perpaduan kepribadian alami Anda.
+          </p>
+        </div>
+      </div>
+
+      <!-- Percentage Meter Breakdown -->
+      <div class="breakdown-card card-3d-tilt">
+        <h3>Komposisi Persentase 4 Temperamen</h3>
+        <div class="meter-list" id="meters-container">
+          <!-- 4 Bars dirender di sini -->
+        </div>
+      </div>
+
+      <!-- Tabbed Deep Analysis -->
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn active" data-tab="dominant">1. Karakter Utama</button>
+        <button class="tab-btn" data-tab="combo">2. Perpaduan Dominan</button>
+        <button class="tab-btn" data-tab="theory">3. Teori 4 Temperamen</button>
+      </div>
+
+      <div class="tab-content-panel active" id="tab-content-dominant">
+        <div class="prose-content">Memuat ulasan karakter utama...</div>
+      </div>
+
+      <div class="tab-content-panel" id="tab-content-combo">
+        <div class="prose-content">Memuat ulasan perpaduan karakter...</div>
+      </div>
+
+      <div class="tab-content-panel" id="tab-content-theory">
+        <div class="prose-content">Memuat teori dasar temperamen...</div>
+      </div>
+
+      <!-- Action Buttons Bar -->
+      <div class="result-actions-bar">
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <button type="button" class="btn btn-secondary" id="btn-print-report">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Cetak / Simpan PDF
+          </button>
+          <button type="button" class="btn btn-secondary" id="btn-copy-summary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Salin Ringkasan
+          </button>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-retest" style="width: auto;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+          Ulangi Asesmen
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       MODAL: RIWAYAT LOG PESERTA & PENGATURAN BACKEND
+       ==================================================================== -->
+  <div class="modal-backdrop" id="modal-logs-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Riwayat Log Peserta & Integrasi Cloud</h3>
+        <button type="button" class="btn btn-text btn-sm" id="btn-close-logs" style="font-size:1.25rem;">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <h4 style="margin-bottom:0.75rem;">Daftar Peserta yang Telah Mengerjakan</h4>
+        <div class="table-responsive" style="margin-bottom: 2rem;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Nama Peserta</th>
+                <th>Waktu</th>
+                <th>Dominan 1</th>
+                <th>Dominan 2</th>
+                <th>Skor Persentase</th>
+                <th>Instansi</th>
+              </tr>
+            </thead>
+            <tbody id="logs-table-body">
+              <!-- Logs table rows dirender oleh app.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <h4 style="margin-bottom:0.75rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+          Konfigurasi Backend (Firebase & Google Sheets)
+        </h4>
+        <p style="font-size:0.85rem; margin-bottom:1rem;">
+          Data otomatis tersimpan di LocalStorage browser ini. Masukkan URL endpoint di bawah untuk sinkronisasi otomatis ke cloud:
+        </p>
+
+        <form id="form-backend-settings">
+          <div class="form-group">
+            <label class="form-label" for="setting-fb-url">Firebase Realtime Database URL</label>
+            <input type="url" id="setting-fb-url" class="form-input" placeholder="https://proyek-anda-default-rtdb.asia-southeast1.firebasedatabase.app">
+            <small style="color:var(--text-subtle); font-size:0.775rem;">Data akan otomatis di-POST ke path <code>/galen_assessment_logs.json</code>.</small>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="setting-gs-url">Google Sheets Apps Script Web App URL</label>
+            <input type="url" id="setting-gs-url" class="form-input" placeholder="https://script.google.com/macros/s/YOUR_APPS_SCRIPT_ID/exec">
+            <small style="color:var(--text-subtle); font-size:0.775rem;">Data akan otomatis di-POST ke spreadsheet Anda.</small>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-save-backend-settings">
+            Simpan Pengaturan Backend
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <div>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-export-csv">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Export ke CSV (Excel)
+          </button>
+        </div>
+        <button type="button" class="btn btn-text btn-sm" id="btn-clear-logs" style="color:var(--koleris-color);">
+          Hapus Riwayat Lokal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="app-toast">Pemberitahuan</div>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Galen Personality Assessment</strong> • Psychometric Evaluation Tool
+      </div>
+      <div>
+        Berdasarkan Teori 4 Temperamen Galen & Florence Littauer
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/questions.js"></script>
+  <script src="data/descriptions.js"></script>
+  <script src="js/config.example.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

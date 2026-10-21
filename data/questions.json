@@ -1,0 +1,842 @@
+﻿[
+    {
+        "id":  1,
+        "options":  [
+                        {
+                            "text":  "Suka menganalisis bagian-bagian dari apa saja untuk meyakinkan diri apakah hubungan antara satu hal dengan lainnya itu logis",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Suka tantangan, hal-hal baru, hal-hal yang memerlukan keberanian dan tekad untuk menguasainya",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Mudah menyesuaikan diri dan merasa nyaman dalam setiap situasi",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Penuh gairah hidup dan suka mengkomunikasikan pikiran dan perasaan dengan gerakan tangan, lengan, dan mimik wajah",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  2,
+        "options":  [
+                        {
+                            "text":  "Ceria, suka bercanda",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Menyelesaikan pekerjaan sampai tuntas, sebelum memulai hal baru",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Meyakinkan, lebih memakai logika dan fakta daripada dengan memakai daya tarik pribadi atau kuasa pribadi",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Suasana hati damai dan tidak terpengaruh kejadian di sekitar",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  3,
+        "options":  [
+                        {
+                            "text":  "Bersedia (tanpa pamrih) mengorbankan kepentingan diri demi kebutuhan orang lain",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Mudah menerima pandangan atau keinginan orang lain dan hampir tidak mempunyai keinginan untuk menyatakan pendapat sendiri",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Lebih melihat kebersamaan dengan orang lain sebagai kesempatan untuk tampil cerdas, menarik dan menyenangkan daripada sebagai kesempatan untuk mendapatkan tantangan baru",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Berkemauan keras, bertekad untuk mencapai apa yang dikehendaki",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  4,
+        "options":  [
+                        {
+                            "text":  "Meyakinkan orang lain melalui daya tarik pribadi",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Mempunyai emosi-emosi tetapi dapat mengendalikannya, jarang memperlihatkan emosi pribadi",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Menganggap setiap situasi sebagai suatu pertandingan dan cenderung ingin memenangkannya",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Mempunyai perhatian dan tanggap terhadap kebutuhan dan perasaan orang lain",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  5,
+        "options":  [
+                        {
+                            "text":  "Memperlakukan orang lain dengan sopan, hormat dan penghargaan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Menyegarkan dan merangsang orang-orang lain untuk merasa senang",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Mengendalikan / menahan diri dalam mengekspresikan keinginan",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Dapat bertindak cepat dan efektif dalam hampir setiap keadaan",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  6,
+        "options":  [
+                        {
+                            "text":  "Mudah menerima keadaan atau situasi apapun, mudah puas",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Mempunyai kepedulian mendalam terhadap orang lain dan kejadian",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Mandiri, tidak tergantung, mengandalkan kemampuan, pendapat dan akal budi sendiri secara total",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Penuh gairah dan kegembiraan yang menggelora",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  7,
+        "options":  [
+                        {
+                            "text":  "Berpikir positif, yakin pada diri sendiri bahwa segala akan beres bila dirinya yang melakukan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Lebih suka membuat rencana terperinci untuk keberhasilan suatu pekerjaan dan lebih memilih keterlibatan dalam perencanaan daripada pelaksanaan tugas-tugasnya",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Mendorong orang lain untuk ikut bergabung di suatu kegiatan melalui daya tarik pribadi",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Sabar, tak terpengaruh akan penundaan, perubahaan, tetap tenang dan toleran menerima keadaan",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  8,
+        "options":  [
+                        {
+                            "text":  "Spontan, lebih menyukai hidup yang impulsif (berdasar dorongan hati) atau aktivitas yang tidak dipikir dahulu",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Membuat segala sesuatu dan hidup sesuai rencana harian dan tidak suka adanya interupsi dalam rencana pribadi",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Pendiam, tidak mudah larut dalam percakapan",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Yakin, hampir tidak pernah ragu / goyah",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  9,
+        "options":  [
+                        {
+                            "text":  "Mengatur segalanya secara metodis dan sistematis",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Berbicara secara terus terang tanpa perasaan sungkan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Mudah menampung, menerima apa saja, mudah melakukan hal-hal atas saran orang lain",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Ceria, meyakinkan diri sendiri dan orang lain bahwa semua akan beres",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  10,
+        "options":  [
+                        {
+                            "text":  "Kepribadian yang berwibawa / kuat, yang menyebabkan orang lain ragu untuk melawan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Dapat diandalkan secara konsisten, teguh, loyal (setia), dan terkadang mengabdi tanpa alasan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Rasa humor pribadi bagai percikan kembang api yang membuat cerita apa saja menjadi peristiwa penuh kegembiraan / tawa",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Ramah, lebih suka menanggapi daripada memulai percakapan",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  11,
+        "options":  [
+                        {
+                            "text":  "Bila berhubungan dengan orang bersikap diplomatis (berusaha tidak menyinggung / menyerang), peka, dan sabar",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Bersedia mengambil resiko, berani, dan jarang memiliki rasa takut",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Membuat orang senang berada bersama, menyenangkan sebagai teman",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Terperinci, melakukan segala sesuatu menurut urutan dan kronologis",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  12,
+        "options":  [
+                        {
+                            "text":  "Mempunyai minat yang melibatkan hal-hal yang berbudaya, intelek, atau berkelas",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Memiliki keseimbangan emosional, dapat memberi tanggapan sesuai harapan orang",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Percaya diri, yakin akan kemampuan diri",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Suka bersemangat, riang, dan membuat orang lain berbahagia",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  13,
+        "options":  [
+                        {
+                            "text":  "Mandiri, berdikari, percaya diri, dan tampak tidak begitu butuh bantuan orang lain",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Memberi inspirasi kepada orang-orang untuk bekerja, bergabung / terlibat dan membuat keseluruhannya menyenangkan",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Menggambarkan semuanya dalam kesempatan dan punya kebutuhan untuk mencapai tingkat kesempurnaan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Jarang mengatakan dan menyebabkan hal-hal yang tidak menyenangkan atau menimbulkan pertengkaran",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  14,
+        "options":  [
+                        {
+                            "text":  "Mendalam dan introspektif dalam cara berpikir, tidak suka hal-hal yang dangkal (tidak berarti)",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Punya rasa humor kering, memiliki kemampuan memunculkan kalimat-kalimat singkat menggigit dan biasa bersifat sarkastis (menyindir tajam)",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Punya kemampuan untuk membuat penilaian, keputusan, dan kesimpulan dengan cepat dan tuntas",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Mengungkapkan diri secara terbuka, terutama mengenai perasaan sayang, dan tidak ragu menyentuh lawan bicara",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  15,
+        "options":  [
+                        {
+                            "text":  "Suka pesta, tidak sabar untuk bertemu dengan semua hadirin dan tidak pernah menganggap orang lain sebagai orang asing",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Terdorong oleh kebutuhan untuk menjadi orang yang produktif, sebagai pemimpin yang diikuti orang-orang, tidak suka santai / diam",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Punya penghargaan tinggi terhadap musik, punya komitmen terhadap musik, menganggap musik sebagai bentuk seni daripada sekedar pertunjukan yang menyenangkan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Suka berada di posisi penengah, membantu orang-orang yang bertikai agar konflik dapat dihindari / diselesaikan",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  16,
+        "options":  [
+                        {
+                            "text":  "Teguh, berpendirian, dan enggan berhenti sebelum tujuan tercapai",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Tak henti bicara, biasanya bercerita tentang hal-hal lucu dan menghibur, merasa terpanggil mengisi kesunyian supaya orang-orang merasa senang / nyaman",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Mudah menerima jalan pikiran dan cara orang lain tanpa ada keinginan untuk tidak setuju atau mengubahnya",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Penuh perhatian, tenggang rasa, ingat kejadian-kejadian istimewa serta cepat dalam membuat gerakan / tanda-tanda keramahan kepada orang lain",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  17,
+        "options":  [
+                        {
+                            "text":  "Setia kepada seseorang, gagasan, atau pekerjaan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Penuh harapan, cekatan, dan bersemangat",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Bersedia dengan senang hati mendengarkan apa yang dikatakan orang lain",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Pemimpin alami yang punya dorongan memimpin / bertanggung jawab dan sering merasa sulit percaya bahwa orang lain dapat mengerjakan tugas dengan baik",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  18,
+        "options":  [
+                        {
+                            "text":  "Mudah puas dengan apa yang dimiliki, jarang iri hati",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Memimpin dan mengharapkan orang lain mengikuti",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Bermutu, cerdik / cerdas, menarik, menjadi pusat perhatian",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Mengatur kehidupan, tugas dan penyelesaian masalah dengan membuat daftar, formulir, atau grafik",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  19,
+        "options":  [
+                        {
+                            "text":  "Memberi standar tinggi pada diri sendiri dan seringkali pada orang lain juga, menginginkan semuanya pada urutan semestinya",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Mudah bergaul, terbuka, dan mudah diajak bicara",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Menghidupkan segala situasi dan menyenangkan",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Merasa harus terus bekerja dan menghasilkan",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  20,
+        "options":  [
+                        {
+                            "text":  "Kepribadian yang hidup, penuh tenaga, dan sedikit berlebihan",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Konsisten dalam membawa diri sesuai norma hukum atau batas-batas yang dapat diterima kebanyakan orang",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Stabil, cenderung mengambil jalan tengah dan tenang",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Tidak kenal takut, tak gentar, berani menanggung segala resiko",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  21,
+        "options":  [
+                        {
+                            "text":  "Suka memerintah, mendominasi, kadang mengesalkan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Menghindari perhatian karena rasa malu",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Suka pamer, omong besar, dan sok hebat",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Orang yang sangat jarang menunjukkan ekspresi wajah atau emosi",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  22,
+        "options":  [
+                        {
+                            "text":  "Bersifat kurang disiplin / teratur sehingga hal tersebut mempengaruhi hampir semua aspek hidupnya",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Kurang peka dan sulit mengenali problem atau perasaan terlukanya orang lain",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Tidak bergairah, pesimis dalam melakukan sesuatu",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Punya kesulitan untuk mengampuni atau melupakan suatu luka batin dan ketidakadilan yang pernah dialami, suka menyimpan dendam",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  23,
+        "options":  [
+                        {
+                            "text":  "Tidak suka terlibat, apalagi jika rumit dan kompleks",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Cenderung melawan cara lain yang bukan cara sendiri",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Sering memendam perasaan negatif, baik itu pengalaman nyata atau hanya bayangan sendiri saja",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Menceritakan kembali kisah / kejadian untuk menghibur orang tanpa sadar bahwa itu sudah dilakukan berulang kali, butuh bicara",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  24,
+        "options":  [
+                        {
+                            "text":  "Terus terang, tidak segan mengungkapkan apa yang dipikirkan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Punya daya ingat yang lemah terhadap tugas dan kurang disiplin",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Sering khawatir, sedih, atau gelisah tentang sesuatu",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Bersikeras mengenai hal yang tidak penting dan menuntut perhatian besar untuk hal detil yang kurang berarti",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  25,
+        "options":  [
+                        {
+                            "text":  "Sulit membuat keputusan",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Sering merasa kurang percaya diri dan merasa tidak aman",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Tidak sabaran, susah menanggung kekesalan atau menunggu",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Lebih suka bicara daripada mendengarkan, suka menyela pembicaraan orang",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  26,
+        "options":  [
+                        {
+                            "text":  "Tidak populer di dalam pergaulan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Jarang memiliki ketertarikan di dalam melakukan sesuatu",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Emosi naik turun, tindakan kurang konsisten",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Kurang memiliki belas kasihan",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  27,
+        "options":  [
+                        {
+                            "text":  "Tidak punya cara yang konsisten untuk melakukan banyak hal",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Bersikeras mencapai sesuatu dengan caranya sendiri",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Sulit disenangkan, punya standar sangat tinggi sehingga membuat orang lain sulit memuaskan diri",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Sulit bersemangat dan sulit ingin terlibat",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  28,
+        "options":  [
+                        {
+                            "text":  "Mudah marah, punya perangai seperti anak-anak yang suka ngambek atau marah meledak-ledak tetapi cepat lewat dan dilupakan",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Merasa terkucilkan dari orang lain, seringkali karena merasa tidak aman atau takut orang tidak menyukai",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Tidak punya tujuan / inisiatif, bukan orang yang dapat menentukan tujuan dan tidak adan keinginan untuk menjadi orang yang punya tujuan",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Memicu adu argumen / perdebatan karena merasa dirinya benar tanpa memperhatikan situasi / keadaan",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  29,
+        "options":  [
+                        {
+                            "text":  "Berani bertindak melawan aturan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Memiliki perspektif sederhana / polos seperti anak-anak, merasa tidak memiliki pengalaman / pemahaman tentang kedalaman tingkat kehidupan",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Menganggap remeh dan masa bodoh terhadap keadaan sekitar",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Memiliki sikap yang jarang positif dan sering hanya melihat sisi buruk dari setiap situasi",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  30,
+        "options":  [
+                        {
+                            "text":  "Suka menarik diri, memerlukan banyak waktu menyendiri",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Kecanduan kerja, merasa bersalah bila istirahat",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Sering merasa resah dan khawatir",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Cenderung mencari penghargaan dari orang lain",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  31,
+        "options":  [
+                        {
+                            "text":  "Cenderung menghindar dari persoalan rumit, takut konflik",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Introspeksi berlebihan terhadap diri dan mudah tersinggung bila orang salah paham",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Cerewet dan sulit mendengarkan orang lain",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Kurang pertimbangan dalam mengungkapkan diri, terkadang menyakiti hati dan tidak peka terhadap perasaan orang lain",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  32,
+        "options":  [
+                        {
+                            "text":  "Kurang kemampuan untuk mengatur kehidupan diri",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Memaksa mengambil kendali atas situasi atau orang lain dengan memerintahkan apa yang harus dilakukan",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Hampir selalu merasa tertekan, dapat merasakan aneka perasaan negatif tanpa alasan yang jelas",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Terpengaruh oleh ketidakpastian dan kurang percaya bahwa sesuatu bisa berhasil",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  33,
+        "options":  [
+                        {
+                            "text":  "Tertutup, pemikiran dan perhatian tertuju ke dalam dirinya sendiri",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Tidak dapat menerima sikap, pandangan, atau cara orang lain",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Acuh dan jarang benar-benar tertarik terhadap sesuatu, menganggap kebanyakan hal tidak penting",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Bersikap tidak tentu, berlawanan dengan tindakan, emosi tidak logis",
+                            "category":  "s"
+                        }
+                    ]
+    },
+    {
+        "id":  34,
+        "options":  [
+                        {
+                            "text":  "Bicara tidak jelas, sering bergumam",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Suasana hati tidak bisa membumbung tinggi tapi mudah merosot sampai tingkat terendah, terutama bila merasa tidak dihargai",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Hidup dalam keadaan berantakan sehingga sulit menemukan barang-barang sendiri",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Manipulatif dan mempengaruhi dengan tipu muslihat",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  35,
+        "options":  [
+                        {
+                            "text":  "Tidak mudah percaya, suka mempertanyakan alasan / motivasi dibalik perkataan / tindakan",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Punya kebutuhan untuk tampil, menjadi pusat perhatian, ingin terlihat menonjol",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Lamban, tidak suka berpikir / bertindak cepat karena itu merepotkan",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Keras kepala, bertekad memaksakan kehendak, tidak mudah dibujuk / dipengaruhi",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  36,
+        "options":  [
+                        {
+                            "text":  "Keras suara dan tawa melebihi suara dan tawa orang lain di tempat yang sama",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Tidak ragu menunjukkan dirinya benar dan memegang kendali",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Pemalas dan suka menghitung tenaga yang dikeluarkan untuk suatu kegiatan",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Terlalu sering berpikir sendiri, cenderung menghindar dari orang lain",
+                            "category":  "m"
+                        }
+                    ]
+    },
+    {
+        "id":  37,
+        "options":  [
+                        {
+                            "text":  "Mudah marah karena tidak sabar, menjadi marah bila orang lain tidak cukup cepat atau tidak menyelesaikan pekerjaan sebagaimana mestinya",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Cenderung mencurigai atau tidak percaya orang lain",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Pikiran sulit untuk dapat lama berkonsentrasi",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Lambat memulai, perlu terus dimotivasi untuk bergerak",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  38,
+        "options":  [
+                        {
+                            "text":  "Menyukai aktivitas baru sebab bosan melakukan hal yang sama terus menerus",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Cenderung mendendam dan menuntut balas",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Enggan terlibat dalam sesuatu",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Tergesa-gesa di dalam bertindak akibat kurang sabar",
+                            "category":  "k"
+                        }
+                    ]
+    },
+    {
+        "id":  39,
+        "options":  [
+                        {
+                            "text":  "Hanya mampu berkonsentrasi sejenak, perlu banyak perubahan dan variasi agar tidak bosan",
+                            "category":  "s"
+                        },
+                        {
+                            "text":  "Licik, cenderung menemukan jalan untuk mencapai keinginannya dengan menghalalkan segala cara",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Mengevaluasi, menilai, dan memikirkan sisi negatif sesuatu",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Mudah kompromi, mengendurkan pendirian walau berada dalam posisi benar guna menghindari konflik",
+                            "category":  "p"
+                        }
+                    ]
+    },
+    {
+        "id":  40,
+        "options":  [
+                        {
+                            "text":  "Cenderung bersikap datar, hampir tidak menunjukkan emosi (itupun bila memang ada emosi)",
+                            "category":  "p"
+                        },
+                        {
+                            "text":  "Pesimis terhadap suatu hasil, meskipun mengharapkan yang terbaik tetapi lebih dulu melihat sisi buruk dari sebuah situasi",
+                            "category":  "m"
+                        },
+                        {
+                            "text":  "Memiliki harga diri tinggi, melihat diri sebagai selalu benar dan orang yang tepat untuk melakukan suatu tugas",
+                            "category":  "k"
+                        },
+                        {
+                            "text":  "Membiarkan orang lain melakukan apa yang disukainya agar diri sendiri dapat diterima lingkungan",
+                            "category":  "s"
+                        }
+                    ]
+    }
+]

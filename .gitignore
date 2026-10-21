@@ -1,0 +1,12 @@
+# Private environment & credentials
+js/config.js
+.env
+.env.*
+.firebase/
+firebase-debug.log*
+
+# System & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
