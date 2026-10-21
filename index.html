@@ -56,7 +56,7 @@
         <!-- Backend Settings & Logs Button -->
         <button type="button" class="btn btn-secondary btn-sm" id="btn-open-logs">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          Riwayat & Backend
+          Riwayat Asesmen
         </button>
       </div>
     </div>
@@ -281,13 +281,13 @@
   <div class="modal-backdrop" id="modal-logs-backdrop">
     <div class="modal-box">
       <div class="modal-header">
-        <h3>Riwayat Log Peserta & Integrasi Cloud</h3>
+        <h3>Riwayat Asesmen Peserta</h3>
         <button type="button" class="btn btn-text btn-sm" id="btn-close-logs" style="font-size:1.25rem;">✕</button>
       </div>
 
       <div class="modal-body">
         <h4 style="margin-bottom:0.75rem;">Daftar Peserta yang Telah Mengerjakan</h4>
-        <div class="table-responsive" style="margin-bottom: 2rem;">
+        <div class="table-responsive">
           <table class="data-table">
             <thead>
               <tr>
@@ -304,31 +304,6 @@
             </tbody>
           </table>
         </div>
-
-        <h4 style="margin-bottom:0.75rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
-          Konfigurasi Backend (Firebase & Google Sheets)
-        </h4>
-        <p style="font-size:0.85rem; margin-bottom:1rem;">
-          Data otomatis tersimpan di LocalStorage browser ini. Masukkan URL endpoint di bawah untuk sinkronisasi otomatis ke cloud:
-        </p>
-
-        <form id="form-backend-settings">
-          <div class="form-group">
-            <label class="form-label" for="setting-fb-url">Firebase Realtime Database URL</label>
-            <input type="url" id="setting-fb-url" class="form-input" placeholder="https://proyek-anda-default-rtdb.asia-southeast1.firebasedatabase.app">
-            <small style="color:var(--text-subtle); font-size:0.775rem;">Data akan otomatis di-POST ke path <code>/galen_assessment_logs.json</code>.</small>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="setting-gs-url">Google Sheets Apps Script Web App URL</label>
-            <input type="url" id="setting-gs-url" class="form-input" placeholder="https://script.google.com/macros/s/YOUR_APPS_SCRIPT_ID/exec">
-            <small style="color:var(--text-subtle); font-size:0.775rem;">Data akan otomatis di-POST ke spreadsheet Anda.</small>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-sm" id="btn-save-backend-settings">
-            Simpan Pengaturan Backend
-          </button>
-        </form>
       </div>
 
       <div class="modal-footer">

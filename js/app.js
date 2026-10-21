@@ -53,8 +53,7 @@
     bindEvents();
     init3DTiltEffects();
     await loadData();
-    updateBackendBadgeStatus();
-  }
+      }
 
   /**
    * Load data soal & ulasan
@@ -127,8 +126,7 @@
     document.getElementById('btn-clear-logs')?.addEventListener('click', handleClearLogs);
 
     // Settings Backend Form
-    document.getElementById('btn-save-backend-settings')?.addEventListener('click', handleSaveBackendSettings);
-
+    
     // Theme Toggle (Dark & Light Mode)
     document.getElementById('btn-theme-toggle')?.addEventListener('click', toggleTheme);
     updateThemeUI();
@@ -879,24 +877,14 @@ Dibuat dengan Galen Personality Assessment Tool`;
     badge.textContent = text;
   }
 
-  /**
-   * Update badge status backend di header / settings
-   */
-  function updateBackendBadgeStatus() {
-    const config = window.GalenConfig.get();
-    const fbInput = document.getElementById('setting-fb-url');
-    const gsInput = document.getElementById('setting-gs-url');
-    if (fbInput) fbInput.value = config.firebase.databaseUrl || '';
-    if (gsInput) gsInput.value = config.googleSheets.webhookUrl || '';
-  }
+
 
   /**
    * Buka Modal Logs & Admin
    */
   function openLogsModal() {
     renderLogsTable();
-    updateBackendBadgeStatus();
-    document.getElementById('modal-logs-backdrop')?.classList.add('open');
+        document.getElementById('modal-logs-backdrop')?.classList.add('open');
   }
 
   /**
@@ -953,24 +941,7 @@ Dibuat dengan Galen Personality Assessment Tool`;
     }
   }
 
-  /**
-   * Simpan Konfigurasi Backend
-   */
-  function handleSaveBackendSettings(e) {
-    e.preventDefault();
-    const config = window.GalenConfig.get();
-    const fbUrl = document.getElementById('setting-fb-url')?.value.trim() || '';
-    const gsUrl = document.getElementById('setting-gs-url')?.value.trim() || '';
 
-    config.firebase.databaseUrl = fbUrl;
-    config.firebase.enabled = Boolean(fbUrl);
-
-    config.googleSheets.webhookUrl = gsUrl;
-    config.googleSheets.enabled = Boolean(gsUrl);
-
-    window.GalenConfig.save(config);
-    showToast("Pengaturan backend berhasil disimpan!");
-  }
 
   /**
    * Toast notification helper
